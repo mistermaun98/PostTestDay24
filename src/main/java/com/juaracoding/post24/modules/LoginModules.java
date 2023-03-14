@@ -29,7 +29,10 @@ public class LoginModules {
     @FindBy(xpath = "//p[@class='oxd-text oxd-text--p oxd-alert-content-text']")
     WebElement txtInvalidCredentials;
 
-    @FindBy(xpath = "//div[@class='orangehrm-login-slot-wrapper']//div[2]//div[1]//span[1]")
+//    @FindBy(xpath = "//div[@class='orangehrm-login-slot-wrapper']//div[2]//div[1]//span[1]")
+
+    //alternative shorter xpath
+    @FindBy(xpath = "//span[contains(@class, input-field-error-message)]")
     WebElement emptyPassword;
 
     @FindBy(xpath = "//div[@class='orangehrm-login-slot-wrapper']//div[2]//div[1]//span[1]")
